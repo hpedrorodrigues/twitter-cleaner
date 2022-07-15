@@ -23,7 +23,7 @@ dockers:
       - --label=org.opencontainers.image.licenses=MIT
 nfpms:
   - maintainer: Pedro Rodrigues <https://github.com/hpedrorodrigues>
-    description: Twitter Cleaner deletes tweets, retweets, and favorites from your timeline.
+    description: Automatically delete tweets, retweets, and favorites from your timeline.
     homepage: https://github.com/hpedrorodrigues/{{ .ProjectName }}
     license: MIT
     formats:
