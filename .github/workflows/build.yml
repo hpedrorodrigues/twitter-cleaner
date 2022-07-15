@@ -7,9 +7,6 @@ on:
     tags:
       - 'v*'
   pull_request:
-    pull_request:
-      branches:
-        - main
 
 jobs:
   build:
@@ -30,10 +27,10 @@ jobs:
           key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-go-
-      - name: Build
+      - name: Tests
         run: |
           go mod tidy
-          go build -v ./...
+          go test -v ./...
       - name: Docker Login
         uses: docker/login-action@v1
         with:
