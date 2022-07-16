@@ -6,11 +6,11 @@ Automatically delete tweets, retweets, and favorites from your timeline.
 
 ### Authentication
 
-This project uses the OAuth 1.0 API, and as such requires api keys to authenticate against the Twitter API.
+This project uses the OAuth 1.0 API, and as such requires api keys to authenticate itself against the Twitter API.
 
 In order to generate those API keys, you'll need to create a new [twitter app][twitter-new-app].
 
-> Note: Please, make sure you change the authentication settings and enable the OAuth 1.0 API with Read and Write access.
+> Note: Please, make sure you change the authentication settings and enable the OAuth 1.0 API with "Read and Write" access.
 
 ### Run
 
